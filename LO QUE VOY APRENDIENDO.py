@@ -1,17 +1,14 @@
 class pokemon:
     class pikachu:
-        potencia = 20
-        vida = 60
-        def atacar(potencia):
-            daño = potencia
-            return daño
+        def atributopikachu(self, potencia, vida):
+            self.potencia = potencia
+            self.vida = vida
     class charmander:
-        potencia = 25
-        vida = 50
+        def atributochar(self, potencia, vida):
+            self.potencia = 25
+            self.vida = 50
         def atacar(potencia):
             daño = potencia
             return daño
 
-vidanueva = pokemon.charmander.vida - pokemon.pikachu.potencia
-
-print(vidanueva)
+#self - a cada pokemon le pongo un valor de ataque distinto
